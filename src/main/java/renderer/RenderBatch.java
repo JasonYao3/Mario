@@ -107,9 +107,19 @@ public class RenderBatch {
     }
 
     public void render() {
-        // For now, we will rebuffer all data every frame
-        glBindBuffer(GL_ARRAY_BUFFER, vboID);
-        glBufferSubData(GL_ARRAY_BUFFER, 0, vertices);
+        boolean rebufferData = false;
+        for (int i=0; i < numSprites; i++) {
+            SpriteRenderer spr = sprites[i];
+            if (spr.isDirty()) {
+                loadVertexProperties(i);
+                spr.setClean();
+                rebufferData = true;
+            }
+        }
+        if (rebufferData) {
+            glBindBuffer(GL_ARRAY_BUFFER, vboID);
+            glBufferSubData(GL_ARRAY_BUFFER, 0, vertices);
+        }
 
         // Use shader
         shader.use();
@@ -140,7 +150,7 @@ public class RenderBatch {
     private void loadVertexProperties(int index) {
         SpriteRenderer sprite = this.sprites[index];
 
-        // Find the offset winthin array (4 vertices per sprite)
+        // Find the offset within array (4 vertices per sprite)
         int offset = index * 4 * VERTEX_SIZE;
 
         Vector4f color = sprite.getColor();
