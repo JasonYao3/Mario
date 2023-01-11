@@ -22,9 +22,9 @@ public class Window {
         this.width = 1920;
         this.height = 1080;
         this.title = "Mario";
-        r = 1;
-        b = 1;
-        g = 1;
+        r = 0;
+        b = 0;
+        g = 0;
         a = 1;
     }
 
@@ -32,18 +32,18 @@ public class Window {
         switch (newScene) {
             case 0:
                 currentScene = new LevelEditorScene();
-                currentScene.init();
-                currentScene.start();
                 break;
             case 1:
                 currentScene = new LevelScene();
-                currentScene.init();
-                currentScene.start();
                 break;
             default:
                 assert false : "Unknown scene " + newScene;
                 break;
         }
+
+        currentScene.load();
+        currentScene.init();
+        currentScene.start();
     }
 
     public static Window get() {
@@ -126,7 +126,6 @@ public class Window {
         float endTime;
         float dt = -1.0f;
 
-        currentScene.load();
         while (!glfwWindowShouldClose(glfwWindow)) {
             // Poll events
             glfwPollEvents();
