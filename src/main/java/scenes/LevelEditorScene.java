@@ -1,9 +1,10 @@
-package engine;
+package scenes;
 
-import components.Rigidbody;
-import components.Sprite;
-import components.SpriteRenderer;
-import components.Spritesheet;
+import components.*;
+import engine.Camera;
+import engine.GameObject;
+import engine.Prefabs;
+import engine.Transform;
 import imgui.ImGui;
 import imgui.ImVec2;
 import org.joml.Vector2f;
@@ -16,6 +17,8 @@ public class LevelEditorScene extends Scene {
     private Spritesheet sprites;
     SpriteRenderer obj1Sprite;
 
+    MouseControls mouseControls = new MouseControls();
+
     public LevelEditorScene() {
 
     }
@@ -27,6 +30,7 @@ public class LevelEditorScene extends Scene {
         sprites = AssetPool.getSpritesheet("assets/images/spritesheets/decorationsAndBlocks.png");
         if (levelLoaded) {
             this.activeGameObject = gameObjects.get(0);
+            this.activeGameObject.addComponent(new Rigidbody());
             return;
         }
 
@@ -62,6 +66,7 @@ public class LevelEditorScene extends Scene {
 
     @Override
     public void update(float dt) {
+        mouseControls.update(dt);
         for (GameObject go : this.gameObjects) {
             go.update(dt);
         }
@@ -90,7 +95,8 @@ public class LevelEditorScene extends Scene {
 
             ImGui.pushID(i);
             if (ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[0].x, texCoords[0].y, texCoords[2].x, texCoords[2].y)) {
-                System.out.println("Button " + i + "clicked");
+                GameObject object = Prefabs.generateSpriteObject(sprite, spriteWidth, spriteHeight);
+                mouseControls.pickupObject(object);
             }
             ImGui.popID();
 
