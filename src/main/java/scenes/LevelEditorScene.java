@@ -8,6 +8,8 @@ import engine.Transform;
 import imgui.ImGui;
 import imgui.ImVec2;
 import org.joml.Vector2f;
+import org.joml.Vector3f;
+import renderer.DebugDraw;
 import util.AssetPool;
 
 public class LevelEditorScene extends Scene {
@@ -67,9 +69,14 @@ public class LevelEditorScene extends Scene {
 
     }
 
+    float x = 0.0f;
+    float y = 0.0f;
     @Override
     public void update(float dt) {
         levelEditorStuff.update(dt);
+        DebugDraw.addCircle(new Vector2f(x, y), 64, new Vector3f(1,0,0), 1);
+        x += 50f * dt;
+        y += 50f * dt;
 
         for (GameObject go : this.gameObjects) {
             go.update(dt);
