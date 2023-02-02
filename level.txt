@@ -17,7 +17,7 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "textID": 2,
+              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -224,6 +224,45 @@
           },
           "uid": 52
         }
+      },
+      {
+        "type": "components.Rigidbody",
+        "properties": {
+          "colliderType": 0,
+          "friction": 0.8,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.5,
+            "z": 0.0
+          },
+          "uid": 55
+        }
+      },
+      {
+        "type": "components.Rigidbody",
+        "properties": {
+          "colliderType": 0,
+          "friction": 0.8,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.5,
+            "z": 0.0
+          },
+          "uid": 58
+        }
+      },
+      {
+        "type": "components.Rigidbody",
+        "properties": {
+          "colliderType": 0,
+          "friction": 0.8,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.5,
+            "z": 0.0
+          },
+          "uid": 61
+        }
       }
     ],
     "transform": {
@@ -256,7 +295,7 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "textID": 2,
+              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -313,7 +352,7 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "textID": 2,
+              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -370,7 +409,7 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "textID": 2,
+              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -427,7 +466,7 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "textID": 2,
+              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -484,7 +523,7 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "textID": 2,
+              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -541,7 +580,7 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "textID": 2,
+              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -598,7 +637,7 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "textID": 2,
+              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -655,7 +694,7 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "textID": 2,
+              "texID": -1,
               "width": 112,
               "height": 192
             },
