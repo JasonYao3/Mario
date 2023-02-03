@@ -143,7 +143,7 @@ public class Window {
             glClearColor(r, g, b, a);
             glClear(GL_COLOR_BUFFER_BIT);
 
-            //this.framebuffer.bind();
+            this.framebuffer.bind();
             if (dt >= 0) {
                 DebugDraw.draw();
                 currentScene.update(dt);
@@ -175,5 +175,13 @@ public class Window {
 
     public static void setHeight(int newHeight) {
         get().height = newHeight;
+    }
+
+    public static Framebuffer getFramebuffer() {
+        return get().framebuffer;
+    }
+
+    public static float getTargetAspectRatio() {
+        return 16.0f / 9.0f;
     }
 }

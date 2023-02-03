@@ -75,8 +75,8 @@ public class LevelEditorScene extends Scene {
         }
     }
 
-    float x = 0.0f;
-    float y = 0.0f;
+//    float x = 0.0f;
+//    float y = 0.0f;
     @Override
     public void update(float dt) {
         levelEditorStuff.update(dt);
