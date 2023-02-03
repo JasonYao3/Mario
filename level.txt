@@ -17,7 +17,6 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -295,7 +294,6 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -352,7 +350,6 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -409,7 +406,6 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -466,7 +462,6 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -523,7 +518,6 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -580,7 +574,6 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -637,7 +630,6 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "texID": -1,
               "width": 112,
               "height": 192
             },
@@ -694,7 +686,6 @@
             "height": 16.0,
             "texture": {
               "filepath": "assets/images/spritesheets/decorationsAndBlocks.png",
-              "texID": -1,
               "width": 112,
               "height": 192
             },
