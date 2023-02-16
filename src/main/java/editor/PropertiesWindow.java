@@ -32,5 +32,4 @@ public class PropertiesWindow {
             ImGui.end();
         }
     }
-
 }
