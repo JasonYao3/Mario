@@ -14,6 +14,7 @@ public class GameObject {
     private List<Component> components;
     public transient Transform transform;
     private boolean doSerialization = true;
+    private boolean isDead = false;
 
     public GameObject(String name) {
         this.name = name;
@@ -59,6 +60,12 @@ public class GameObject {
         }
     }
 
+    public void editorUpdate(float dt) {
+        for (int i=0; i < components.size(); i++) {
+            components.get(i).editorUpdate(dt);
+        }
+    }
+
     public void start() {
         for (int i=0; i < components.size(); i++) {
             components.get(i).start();
@@ -70,6 +77,16 @@ public class GameObject {
             if (ImGui.collapsingHeader(c.getClass().getSimpleName()))
                 c.imgui();
         }
+    }
+    public void destroy() {
+        this.isDead = true;
+        for (int i=0; i < components.size(); i++) {
+            components.get(i).destroy();
+        }
+    }
+
+    public boolean isDead() {
+        return this.isDead;
     }
 
     public static void init(int maxId) {
@@ -91,4 +108,5 @@ public class GameObject {
     public boolean doSerialization() {
         return this.doSerialization;
     }
+
 }

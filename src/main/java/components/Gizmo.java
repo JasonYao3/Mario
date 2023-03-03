@@ -60,10 +60,13 @@ public class Gizmo extends Component{
 
     @Override
     public void update(float dt) {
-//        if (MouseListener.isDragging()) {
-//            System.out.println("Dragging");
-//        }
+        if (using) {
+            this.setInactive();
+        }
+    }
 
+    @Override
+    public void editorUpdate(float dt) {
         if (!using) return;
 
         this.activeGameObject = this.propertiesWindow.getActiveGameObject();

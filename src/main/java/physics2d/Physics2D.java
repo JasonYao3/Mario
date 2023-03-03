@@ -65,6 +65,17 @@ public class Physics2D {
         };
     }
 
+    public void destroyGameObject(GameObject go) {
+        Rigidbody2D rb = go.getComponent(Rigidbody2D.class);
+        if (rb != null) {
+            if (rb.getRawBody() != null) {
+                world.destroyBody(rb.getRawBody());
+                rb.setRawBody(null);
+            }
+        }
+    }
+
+
     public void update(float dt) {
         physicsTime += dt;
         if (physicsTime >= 0.0f) {
@@ -72,4 +83,6 @@ public class Physics2D {
             world.step(physicsTime, velocityIterations, (int) physicsTimeStep);
         }
     }
+
+
 }
