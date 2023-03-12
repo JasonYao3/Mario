@@ -191,7 +191,6 @@ public class Window implements Observer {
             glClear(GL_COLOR_BUFFER_BIT);
 
             if (dt >= 0) {
-                DebugDraw.draw();
                 Renderer.bindShader(defaultShader);
                 if (runtimePlaying) {
                     currentScene.update(dt);
@@ -199,12 +198,13 @@ public class Window implements Observer {
                     currentScene.editorUpdate(dt);
                 }
                 currentScene.render();
+                DebugDraw.draw();
             }
             this.framebuffer.unbind();
 
             this.imguiLayer.update(dt, currentScene);
-            glfwSwapBuffers(glfwWindow);
             MouseListener.endFrame();
+            glfwSwapBuffers(glfwWindow);
 
             endTime = (float)glfwGetTime();
             dt = endTime - beginTime;
@@ -213,11 +213,11 @@ public class Window implements Observer {
     }
 
     public static int getWidth() {
-        return get().width;
+        return 3840;//get().width;
     }
 
     public static int getHeight() {
-        return get().height;
+        return 2160;//get().height;
     }
 
     public static void setWidth(int newWidth) {
