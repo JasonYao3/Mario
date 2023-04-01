@@ -190,4 +190,8 @@ public class Scene {
             Component.init(maxCompId);
         }
     }
+
+    public Physics2D getPhysics() {
+        return this.physics2D;
+    }
 }
