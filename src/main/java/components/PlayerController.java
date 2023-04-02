@@ -6,12 +6,14 @@ import engine.Window;
 import org.jbox2d.dynamics.contacts.Contact;
 import org.joml.Vector2f;
 import physics2d.RaycastInfo;
+import physics2d.components.PillboxCollider;
 import physics2d.components.Rigidbody2D;
 import util.AssetPool;
 
 import static org.lwjgl.glfw.GLFW.*;
 
 public class PlayerController extends Component {
+
 
     private enum PlayerState {
         Small,
@@ -144,6 +146,26 @@ public class PlayerController extends Component {
 
     }
 
+
+    public void powerup() {
+        if (playerState == PlayerState.Small) {
+            playerState = PlayerState.Big;
+            AssetPool.getSound("assets/sounds/powerup.ogg").play();
+            gameObject.transform.scale.y = 0.42f;
+            PillboxCollider pb = gameObject.getComponent(PillboxCollider.class);
+            if (pb != null) {
+                jumpBoost *= bigJumpBoostFactor;
+                walkSpeed *= bigJumpBoostFactor;
+                pb.setHeight(0.63f);
+            }
+        } else if (playerState == PlayerState.Big) {
+            playerState = PlayerState.Fire;
+            AssetPool.getSound("assets/sounds/powerup.ogg").play();
+        }
+
+        stateMachine.trigger("powerup");
+    }
+
     @Override
     public void beginCollision(GameObject collidingObject, Contact contact, Vector2f contactNormal) {
         if (isDead) return;
@@ -162,4 +184,5 @@ public class PlayerController extends Component {
     public boolean isSmall() {
         return this.playerState == PlayerState.Small;
     }
+
 }
