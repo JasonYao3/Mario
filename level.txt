@@ -1,6 +1,6 @@
 [
   {
-    "uid": 129,
+    "uid": 0,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -82,8 +82,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -113,7 +113,7 @@
     "isDead": false
   },
   {
-    "uid": 130,
+    "uid": 1,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -195,8 +195,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -226,7 +226,7 @@
     "isDead": false
   },
   {
-    "uid": 131,
+    "uid": 2,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -308,8 +308,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -339,7 +339,7 @@
     "isDead": false
   },
   {
-    "uid": 132,
+    "uid": 3,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -421,8 +421,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -452,7 +452,7 @@
     "isDead": false
   },
   {
-    "uid": 133,
+    "uid": 4,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -534,8 +534,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -565,7 +565,7 @@
     "isDead": false
   },
   {
-    "uid": 134,
+    "uid": 5,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -647,8 +647,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -678,7 +678,7 @@
     "isDead": false
   },
   {
-    "uid": 135,
+    "uid": 6,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -760,8 +760,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -791,7 +791,7 @@
     "isDead": false
   },
   {
-    "uid": 136,
+    "uid": 7,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -873,8 +873,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -904,7 +904,7 @@
     "isDead": false
   },
   {
-    "uid": 137,
+    "uid": 8,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -986,8 +986,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -1017,7 +1017,7 @@
     "isDead": false
   },
   {
-    "uid": 138,
+    "uid": 9,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -1099,8 +1099,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -1130,7 +1130,7 @@
     "isDead": false
   },
   {
-    "uid": 139,
+    "uid": 10,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -1212,8 +1212,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -1243,7 +1243,7 @@
     "isDead": false
   },
   {
-    "uid": 140,
+    "uid": 11,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -1325,8 +1325,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -1356,7 +1356,7 @@
     "isDead": false
   },
   {
-    "uid": 141,
+    "uid": 12,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -1438,8 +1438,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -1469,7 +1469,7 @@
     "isDead": false
   },
   {
-    "uid": 142,
+    "uid": 13,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -1551,8 +1551,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -1582,7 +1582,7 @@
     "isDead": false
   },
   {
-    "uid": 143,
+    "uid": 14,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -1664,8 +1664,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -1695,7 +1695,7 @@
     "isDead": false
   },
   {
-    "uid": 144,
+    "uid": 15,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -1777,8 +1777,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -1808,7 +1808,7 @@
     "isDead": false
   },
   {
-    "uid": 145,
+    "uid": 16,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -1890,8 +1890,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -1921,7 +1921,7 @@
     "isDead": false
   },
   {
-    "uid": 146,
+    "uid": 17,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -2003,8 +2003,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -2034,7 +2034,7 @@
     "isDead": false
   },
   {
-    "uid": 147,
+    "uid": 18,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -2116,8 +2116,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -2147,7 +2147,7 @@
     "isDead": false
   },
   {
-    "uid": 148,
+    "uid": 19,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -2229,8 +2229,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -2260,7 +2260,7 @@
     "isDead": false
   },
   {
-    "uid": 149,
+    "uid": 20,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -2342,8 +2342,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -2373,7 +2373,7 @@
     "isDead": false
   },
   {
-    "uid": 150,
+    "uid": 21,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -2455,8 +2455,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -2486,7 +2486,7 @@
     "isDead": false
   },
   {
-    "uid": 151,
+    "uid": 22,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -2568,8 +2568,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -2599,7 +2599,7 @@
     "isDead": false
   },
   {
-    "uid": 152,
+    "uid": 23,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -2681,8 +2681,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -2712,7 +2712,7 @@
     "isDead": false
   },
   {
-    "uid": 153,
+    "uid": 24,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -2794,8 +2794,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -2825,7 +2825,7 @@
     "isDead": false
   },
   {
-    "uid": 154,
+    "uid": 25,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -2907,8 +2907,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -2938,7 +2938,7 @@
     "isDead": false
   },
   {
-    "uid": 155,
+    "uid": 26,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -3020,8 +3020,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -3051,7 +3051,7 @@
     "isDead": false
   },
   {
-    "uid": 156,
+    "uid": 27,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -3133,8 +3133,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -3164,7 +3164,7 @@
     "isDead": false
   },
   {
-    "uid": 157,
+    "uid": 28,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -3246,8 +3246,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -3277,7 +3277,7 @@
     "isDead": false
   },
   {
-    "uid": 158,
+    "uid": 29,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -3359,8 +3359,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -3390,7 +3390,7 @@
     "isDead": false
   },
   {
-    "uid": 159,
+    "uid": 30,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -3472,8 +3472,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -3503,7 +3503,7 @@
     "isDead": false
   },
   {
-    "uid": 160,
+    "uid": 31,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -3585,8 +3585,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -3616,7 +3616,7 @@
     "isDead": false
   },
   {
-    "uid": 161,
+    "uid": 32,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -3698,8 +3698,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -3729,7 +3729,7 @@
     "isDead": false
   },
   {
-    "uid": 162,
+    "uid": 33,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -3811,8 +3811,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -3842,7 +3842,7 @@
     "isDead": false
   },
   {
-    "uid": 163,
+    "uid": 34,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -3924,8 +3924,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -3955,7 +3955,7 @@
     "isDead": false
   },
   {
-    "uid": 164,
+    "uid": 35,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -4037,8 +4037,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -4068,7 +4068,7 @@
     "isDead": false
   },
   {
-    "uid": 165,
+    "uid": 36,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -4150,8 +4150,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -4181,7 +4181,7 @@
     "isDead": false
   },
   {
-    "uid": 166,
+    "uid": 37,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -4263,8 +4263,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -4294,7 +4294,7 @@
     "isDead": false
   },
   {
-    "uid": 167,
+    "uid": 38,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -4376,8 +4376,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -4407,7 +4407,7 @@
     "isDead": false
   },
   {
-    "uid": 168,
+    "uid": 39,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -4489,8 +4489,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -4520,7 +4520,7 @@
     "isDead": false
   },
   {
-    "uid": 169,
+    "uid": 40,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -4602,8 +4602,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -4633,7 +4633,7 @@
     "isDead": false
   },
   {
-    "uid": 170,
+    "uid": 41,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -4715,8 +4715,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -4746,7 +4746,7 @@
     "isDead": false
   },
   {
-    "uid": 171,
+    "uid": 42,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -4828,8 +4828,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -4859,7 +4859,7 @@
     "isDead": false
   },
   {
-    "uid": 172,
+    "uid": 43,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -4941,8 +4941,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -4972,7 +4972,7 @@
     "isDead": false
   },
   {
-    "uid": 173,
+    "uid": 44,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -5054,8 +5054,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -5085,7 +5085,7 @@
     "isDead": false
   },
   {
-    "uid": 174,
+    "uid": 45,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -5167,8 +5167,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -5198,7 +5198,7 @@
     "isDead": false
   },
   {
-    "uid": 175,
+    "uid": 46,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -5280,8 +5280,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -5311,7 +5311,7 @@
     "isDead": false
   },
   {
-    "uid": 176,
+    "uid": 47,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -5393,8 +5393,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 9.765625E-4,
+            "y": 9.765625E-4
           },
           "origin": {
             "x": 0.0,
@@ -5424,7 +5424,7 @@
     "isDead": false
   },
   {
-    "uid": 177,
+    "uid": 48,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -5768,6 +5768,34 @@
             ],
             [
               {
+                "state": "BigIdle",
+                "trigger": "die"
+              },
+              "Idle"
+            ],
+            [
+              {
+                "state": "Big Switch Direction",
+                "trigger": "die"
+              },
+              "Switch Direction"
+            ],
+            [
+              {
+                "state": "BigRun",
+                "trigger": "die"
+              },
+              "Run"
+            ],
+            [
+              {
+                "state": "Fire Switch Direction",
+                "trigger": "die"
+              },
+              "Big Switch Direction"
+            ],
+            [
+              {
                 "state": "Run",
                 "trigger": "die"
               },
@@ -5782,13 +5810,6 @@
             ],
             [
               {
-                "state": "Fire Switch Direction",
-                "trigger": "die"
-              },
-              "Big Switch Direction"
-            ],
-            [
-              {
                 "state": "FireJump",
                 "trigger": "die"
               },
@@ -5796,10 +5817,24 @@
             ],
             [
               {
+                "state": "FireIdle",
+                "trigger": "die"
+              },
+              "BigIdle"
+            ],
+            [
+              {
                 "state": "BigJump",
                 "trigger": "die"
               },
               "Jump"
+            ],
+            [
+              {
+                "state": "FireRun",
+                "trigger": "die"
+              },
+              "BigRun"
             ],
             [
               {
@@ -5814,41 +5849,6 @@
                 "trigger": "die"
               },
               "Die"
-            ],
-            [
-              {
-                "state": "FireRun",
-                "trigger": "die"
-              },
-              "BigRun"
-            ],
-            [
-              {
-                "state": "BigRun",
-                "trigger": "die"
-              },
-              "Run"
-            ],
-            [
-              {
-                "state": "FireIdle",
-                "trigger": "die"
-              },
-              "BigIdle"
-            ],
-            [
-              {
-                "state": "BigIdle",
-                "trigger": "die"
-              },
-              "Idle"
-            ],
-            [
-              {
-                "state": "Big Switch Direction",
-                "trigger": "die"
-              },
-              "Switch Direction"
             ],
             [
               {
@@ -6794,7 +6794,7 @@
     "isDead": false
   },
   {
-    "uid": 178,
+    "uid": 49,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -7138,6 +7138,34 @@
             ],
             [
               {
+                "state": "FireJump",
+                "trigger": "die"
+              },
+              "BigJump"
+            ],
+            [
+              {
+                "state": "FireRun",
+                "trigger": "die"
+              },
+              "BigRun"
+            ],
+            [
+              {
+                "state": "Big Switch Direction",
+                "trigger": "die"
+              },
+              "Switch Direction"
+            ],
+            [
+              {
+                "state": "BigIdle",
+                "trigger": "die"
+              },
+              "Idle"
+            ],
+            [
+              {
                 "state": "Run",
                 "trigger": "die"
               },
@@ -7152,10 +7180,10 @@
             ],
             [
               {
-                "state": "BigIdle",
+                "state": "Fire Switch Direction",
                 "trigger": "die"
               },
-              "Idle"
+              "Big Switch Direction"
             ],
             [
               {
@@ -7166,27 +7194,6 @@
             ],
             [
               {
-                "state": "Idle",
-                "trigger": "die"
-              },
-              "Die"
-            ],
-            [
-              {
-                "state": "Fire Switch Direction",
-                "trigger": "die"
-              },
-              "Big Switch Direction"
-            ],
-            [
-              {
-                "state": "Big Switch Direction",
-                "trigger": "die"
-              },
-              "Switch Direction"
-            ],
-            [
-              {
                 "state": "BigJump",
                 "trigger": "die"
               },
@@ -7194,17 +7201,10 @@
             ],
             [
               {
-                "state": "FireJump",
+                "state": "Idle",
                 "trigger": "die"
               },
-              "BigJump"
-            ],
-            [
-              {
-                "state": "BigRun",
-                "trigger": "die"
-              },
-              "Run"
+              "Die"
             ],
             [
               {
@@ -7215,10 +7215,10 @@
             ],
             [
               {
-                "state": "FireRun",
+                "state": "BigRun",
                 "trigger": "die"
               },
-              "BigRun"
+              "Run"
             ],
             [
               {
@@ -8164,7 +8164,7 @@
     "isDead": false
   },
   {
-    "uid": 179,
+    "uid": 50,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -8202,19 +8202,19 @@
             },
             "texCoords": [
               {
-                "x": 0.14285715,
+                "x": 0.2857143,
                 "y": 1.0
               },
               {
+                "x": 0.2857143,
+                "y": 0.8
+              },
+              {
                 "x": 0.14285715,
                 "y": 0.8
               },
               {
-                "x": 0.0,
-                "y": 0.8
-              },
-              {
-                "x": 0.0,
+                "x": 0.14285715,
                 "y": 1.0
               }
             ]
@@ -8404,8 +8404,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.03125,
-            "y": 0.03125
+            "x": 0.00390625,
+            "y": 0.00390625
           },
           "origin": {
             "x": 0.0,
@@ -8435,7 +8435,7 @@
     "isDead": false
   },
   {
-    "uid": 180,
+    "uid": 51,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -8517,8 +8517,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0625,
-            "y": 0.0625
+            "x": 0.0078125,
+            "y": 0.0078125
           },
           "origin": {
             "x": 0.0,
@@ -8548,7 +8548,7 @@
     "isDead": false
   },
   {
-    "uid": 181,
+    "uid": 52,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -8630,8 +8630,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.03125,
-            "y": 0.03125
+            "x": 0.00390625,
+            "y": 0.00390625
           },
           "origin": {
             "x": 0.0,
@@ -8661,7 +8661,7 @@
     "isDead": false
   },
   {
-    "uid": 182,
+    "uid": 53,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -8743,8 +8743,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.03125,
-            "y": 0.03125
+            "x": 0.00390625,
+            "y": 0.00390625
           },
           "origin": {
             "x": 0.0,
@@ -8774,7 +8774,7 @@
     "isDead": false
   },
   {
-    "uid": 183,
+    "uid": 54,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -8856,8 +8856,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.03125,
-            "y": 0.03125
+            "x": 0.00390625,
+            "y": 0.00390625
           },
           "origin": {
             "x": 0.0,
@@ -8887,7 +8887,7 @@
     "isDead": false
   },
   {
-    "uid": 184,
+    "uid": 55,
     "name": "Sprite Object_Gen",
     "components": [
       {
@@ -8969,8 +8969,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.03125,
-            "y": 0.03125
+            "x": 0.00390625,
+            "y": 0.00390625
           },
           "origin": {
             "x": 0.0,
@@ -8993,6 +8993,458 @@
         "type": "components.NonPickable",
         "properties": {
           "uid": 73
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 56,
+    "name": "Sprite Object_Gen",
+    "components": [
+      {
+        "type": "engine.Transform",
+        "properties": {
+          "position": {
+            "x": 0.125,
+            "y": 3.125
+          },
+          "scale": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "zIndex": 0,
+          "uid": 94
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 16.0,
+            "height": 16.0,
+            "texture": {
+              "filepath": "assets/images/spritesheet.png",
+              "width": 224,
+              "height": 32
+            },
+            "texCoords": [
+              {
+                "x": 0.14285715,
+                "y": 0.5
+              },
+              {
+                "x": 0.14285715,
+                "y": 0.0
+              },
+              {
+                "x": 0.071428575,
+                "y": 0.0
+              },
+              {
+                "x": 0.071428575,
+                "y": 0.5
+              }
+            ]
+          },
+          "uid": 95
+        }
+      },
+      {
+        "type": "components.StateMachine",
+        "properties": {
+          "stateTransfers": [
+            [
+              {
+                "state": "Walk",
+                "trigger": "squashMe"
+              },
+              "Squashed"
+            ]
+          ],
+          "states": [
+            {
+              "title": "Walk",
+              "animationFrames": [
+                {
+                  "sprite": {
+                    "width": 16.0,
+                    "height": 16.0,
+                    "texture": {
+                      "filepath": "assets/images/spritesheet.png",
+                      "width": 224,
+                      "height": 32
+                    },
+                    "texCoords": [
+                      {
+                        "x": 0.071428575,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 0.071428575,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.0,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.0,
+                        "y": 0.5
+                      }
+                    ]
+                  },
+                  "frameTime": 0.0
+                },
+                {
+                  "sprite": {
+                    "width": 16.0,
+                    "height": 16.0,
+                    "texture": {
+                      "filepath": "assets/images/spritesheet.png",
+                      "width": 224,
+                      "height": 32
+                    },
+                    "texCoords": [
+                      {
+                        "x": 0.14285715,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 0.14285715,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.071428575,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.071428575,
+                        "y": 0.5
+                      }
+                    ]
+                  },
+                  "frameTime": 0.0
+                }
+              ],
+              "doesLoop": true
+            },
+            {
+              "title": "Squashed",
+              "animationFrames": [
+                {
+                  "sprite": {
+                    "width": 16.0,
+                    "height": 16.0,
+                    "texture": {
+                      "filepath": "assets/images/spritesheet.png",
+                      "width": 224,
+                      "height": 32
+                    },
+                    "texCoords": [
+                      {
+                        "x": 0.21428572,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 0.21428572,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.14285715,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.14285715,
+                        "y": 0.5
+                      }
+                    ]
+                  },
+                  "frameTime": 0.0
+                }
+              ],
+              "doesLoop": false
+            }
+          ],
+          "defaultStateTitle": "Walk",
+          "uid": 96
+        }
+      },
+      {
+        "type": "physics2d.components.Rigidbody2D",
+        "properties": {
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "angularDamping": 0.8,
+          "linearDamping": 0.9,
+          "mass": 0.1,
+          "bodyType": "Dynamic",
+          "friction": 0.1,
+          "angularVelocity": 0.0,
+          "gravityScale": 1.0,
+          "isSensor": false,
+          "fixedRotation": true,
+          "continuousCollision": true,
+          "uid": 97
+        }
+      },
+      {
+        "type": "physics2d.components.CircleCollider",
+        "properties": {
+          "radius": 0.12,
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "uid": 98
+        }
+      },
+      {
+        "type": "components.GoombaAI",
+        "properties": {
+          "uid": 99
+        }
+      },
+      {
+        "type": "components.NonPickable",
+        "properties": {
+          "uid": 100
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 57,
+    "name": "Sprite Object_Gen",
+    "components": [
+      {
+        "type": "engine.Transform",
+        "properties": {
+          "position": {
+            "x": 3.125,
+            "y": 0.875
+          },
+          "scale": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "zIndex": 0,
+          "uid": 94
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 16.0,
+            "height": 16.0,
+            "texture": {
+              "filepath": "assets/images/spritesheet.png",
+              "width": 224,
+              "height": 32
+            },
+            "texCoords": [
+              {
+                "x": 0.14285715,
+                "y": 0.5
+              },
+              {
+                "x": 0.14285715,
+                "y": 0.0
+              },
+              {
+                "x": 0.071428575,
+                "y": 0.0
+              },
+              {
+                "x": 0.071428575,
+                "y": 0.5
+              }
+            ]
+          },
+          "uid": 95
+        }
+      },
+      {
+        "type": "components.StateMachine",
+        "properties": {
+          "stateTransfers": [
+            [
+              {
+                "state": "Walk",
+                "trigger": "squashMe"
+              },
+              "Squashed"
+            ]
+          ],
+          "states": [
+            {
+              "title": "Walk",
+              "animationFrames": [
+                {
+                  "sprite": {
+                    "width": 16.0,
+                    "height": 16.0,
+                    "texture": {
+                      "filepath": "assets/images/spritesheet.png",
+                      "width": 224,
+                      "height": 32
+                    },
+                    "texCoords": [
+                      {
+                        "x": 0.071428575,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 0.071428575,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.0,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.0,
+                        "y": 0.5
+                      }
+                    ]
+                  },
+                  "frameTime": 0.0
+                },
+                {
+                  "sprite": {
+                    "width": 16.0,
+                    "height": 16.0,
+                    "texture": {
+                      "filepath": "assets/images/spritesheet.png",
+                      "width": 224,
+                      "height": 32
+                    },
+                    "texCoords": [
+                      {
+                        "x": 0.14285715,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 0.14285715,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.071428575,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.071428575,
+                        "y": 0.5
+                      }
+                    ]
+                  },
+                  "frameTime": 0.0
+                }
+              ],
+              "doesLoop": true
+            },
+            {
+              "title": "Squashed",
+              "animationFrames": [
+                {
+                  "sprite": {
+                    "width": 16.0,
+                    "height": 16.0,
+                    "texture": {
+                      "filepath": "assets/images/spritesheet.png",
+                      "width": 224,
+                      "height": 32
+                    },
+                    "texCoords": [
+                      {
+                        "x": 0.21428572,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 0.21428572,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.14285715,
+                        "y": 0.0
+                      },
+                      {
+                        "x": 0.14285715,
+                        "y": 0.5
+                      }
+                    ]
+                  },
+                  "frameTime": 0.0
+                }
+              ],
+              "doesLoop": false
+            }
+          ],
+          "defaultStateTitle": "Walk",
+          "uid": 96
+        }
+      },
+      {
+        "type": "physics2d.components.Rigidbody2D",
+        "properties": {
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "angularDamping": 0.8,
+          "linearDamping": 0.9,
+          "mass": 0.1,
+          "bodyType": "Dynamic",
+          "friction": 0.1,
+          "angularVelocity": 0.0,
+          "gravityScale": 1.0,
+          "isSensor": false,
+          "fixedRotation": true,
+          "continuousCollision": true,
+          "uid": 97
+        }
+      },
+      {
+        "type": "physics2d.components.CircleCollider",
+        "properties": {
+          "radius": 0.12,
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "uid": 98
+        }
+      },
+      {
+        "type": "components.GoombaAI",
+        "properties": {
+          "uid": 99
+        }
+      },
+      {
+        "type": "components.NonPickable",
+        "properties": {
+          "uid": 100
         }
       }
     ],
