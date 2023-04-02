@@ -12,6 +12,7 @@ import util.AssetPool;
 import static org.lwjgl.glfw.GLFW.*;
 
 public class PlayerController extends Component {
+
     private enum PlayerState {
         Small,
         Big,
@@ -156,5 +157,9 @@ public class PlayerController extends Component {
                 this.jumpTime = 0;
             }
         }
+    }
+
+    public boolean isSmall() {
+        return this.playerState == PlayerState.Small;
     }
 }
