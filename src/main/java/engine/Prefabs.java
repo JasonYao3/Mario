@@ -244,7 +244,7 @@ public class Prefabs {
 
     public static GameObject generateBlockCoin() {
         Spritesheet items = AssetPool.getSpritesheet("assets/images/items.png");
-        GameObject coin = generateSpriteObject(items.getSprite(7), 0.25f, 0.25f);
+        GameObject coin = generateSpriteObject(items.getSprite(7), 0.25f, 0.5f);
 
         AnimationState coinFlip = new AnimationState();
         coinFlip.title = "coinFlip";
@@ -339,5 +339,30 @@ public class Prefabs {
 
         return goomba;
 
+    }
+
+    public static GameObject generatePipe(Direction direction) {
+        Spritesheet pipes = AssetPool.getSpritesheet("assets/images/pipes.png");
+        int index = direction == Direction.Down ? 0 :
+                    direction == Direction.Up ? 1 :
+                    direction == Direction.Right ? 2 :
+                    direction == Direction.Left ? 3 : -1;
+        assert index != -1 : "Invalid pipe direction.";
+        GameObject pipe = generateSpriteObject(pipes.getSprite(index), 0.5f, 0.5f);
+
+        Rigidbody2D rb = new Rigidbody2D();
+        rb.setBodyType(BodyType.Static);
+        rb.setFixedRotation(true);
+        rb.setContinuousCollision(false);
+        pipe.addComponent(rb);
+
+        Box2DCollider b2d = new Box2DCollider();
+        b2d.setHalfSize(new Vector2f(0.5f, 0.5f));
+        pipe.addComponent(b2d);
+        pipe.addComponent(new Pipe(direction));
+        pipe.addComponent(new Ground());
+
+
+        return pipe;
     }
 }

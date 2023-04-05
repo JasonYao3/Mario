@@ -155,4 +155,10 @@ public class Rigidbody2D extends Component {
     public float getFriction() {
         return this.friction;
     }
+
+    public void setPosition(Vector2f newPos) {
+        if (rawBody != null) {
+            rawBody.setTransform(new Vec2(newPos.x, newPos.y), gameObject.transform.rotation);
+        }
+    }
 }
