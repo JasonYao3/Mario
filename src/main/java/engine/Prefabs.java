@@ -191,8 +191,8 @@ public class Prefabs {
         mario.addComponent(stateMachine);
 
         PillboxCollider pb = new PillboxCollider();
-        pb.width = 0.39f;
-        pb.height = 0.31f;
+        pb.width = 0.21f;
+        pb.height = 0.25f;
         Rigidbody2D rb = new Rigidbody2D();
         rb.setBodyType(BodyType.Dynamic);
         rb.setContinuousCollision(false);
@@ -200,7 +200,6 @@ public class Prefabs {
         rb.setMass(25.0f);
 
         mario.addComponent(rb);
-        mario.addComponent(pb);
         mario.addComponent(new PlayerController());
 
         return mario;
