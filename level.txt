@@ -82,8 +82,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -195,8 +195,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -308,8 +308,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -421,8 +421,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -534,8 +534,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -647,8 +647,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -760,8 +760,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -873,8 +873,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -986,8 +986,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -1099,8 +1099,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -1212,8 +1212,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -1325,8 +1325,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -1438,8 +1438,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -1551,8 +1551,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -1664,8 +1664,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -1777,8 +1777,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -1890,8 +1890,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -2003,8 +2003,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -2116,8 +2116,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -2229,8 +2229,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -2342,8 +2342,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -2455,8 +2455,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -2568,8 +2568,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -2681,8 +2681,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -2794,8 +2794,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -2907,8 +2907,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -3020,8 +3020,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -3133,8 +3133,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -3246,8 +3246,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -3359,8 +3359,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -3472,8 +3472,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -3585,8 +3585,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -3698,8 +3698,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -3811,8 +3811,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -3924,8 +3924,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -4037,8 +4037,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -4150,8 +4150,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -4263,8 +4263,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -4376,8 +4376,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -4489,8 +4489,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -4602,8 +4602,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -4715,8 +4715,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -4828,8 +4828,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -4941,8 +4941,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -5054,8 +5054,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -5167,8 +5167,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -5280,8 +5280,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -5393,8 +5393,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 9.765625E-4,
-            "y": 9.765625E-4
+            "x": 4.8828125E-4,
+            "y": 4.8828125E-4
           },
           "origin": {
             "x": 0.0,
@@ -5768,6 +5768,13 @@
             ],
             [
               {
+                "state": "BigRun",
+                "trigger": "die"
+              },
+              "Run"
+            ],
+            [
+              {
                 "state": "BigIdle",
                 "trigger": "die"
               },
@@ -5775,17 +5782,17 @@
             ],
             [
               {
+                "state": "Idle",
+                "trigger": "die"
+              },
+              "Die"
+            ],
+            [
+              {
                 "state": "Big Switch Direction",
                 "trigger": "die"
               },
               "Switch Direction"
-            ],
-            [
-              {
-                "state": "BigRun",
-                "trigger": "die"
-              },
-              "Run"
             ],
             [
               {
@@ -5810,6 +5817,13 @@
             ],
             [
               {
+                "state": "FireRun",
+                "trigger": "die"
+              },
+              "BigRun"
+            ],
+            [
+              {
                 "state": "FireJump",
                 "trigger": "die"
               },
@@ -5831,21 +5845,7 @@
             ],
             [
               {
-                "state": "FireRun",
-                "trigger": "die"
-              },
-              "BigRun"
-            ],
-            [
-              {
                 "state": "Switch Direction",
-                "trigger": "die"
-              },
-              "Die"
-            ],
-            [
-              {
-                "state": "Idle",
                 "trigger": "die"
               },
               "Die"
@@ -7138,6 +7138,13 @@
             ],
             [
               {
+                "state": "Big Switch Direction",
+                "trigger": "die"
+              },
+              "Switch Direction"
+            ],
+            [
+              {
                 "state": "FireJump",
                 "trigger": "die"
               },
@@ -7145,17 +7152,17 @@
             ],
             [
               {
+                "state": "BigRun",
+                "trigger": "die"
+              },
+              "Run"
+            ],
+            [
+              {
                 "state": "FireRun",
                 "trigger": "die"
               },
               "BigRun"
-            ],
-            [
-              {
-                "state": "Big Switch Direction",
-                "trigger": "die"
-              },
-              "Switch Direction"
             ],
             [
               {
@@ -7167,6 +7174,13 @@
             [
               {
                 "state": "Run",
+                "trigger": "die"
+              },
+              "Die"
+            ],
+            [
+              {
+                "state": "Idle",
                 "trigger": "die"
               },
               "Die"
@@ -7194,20 +7208,6 @@
             ],
             [
               {
-                "state": "BigJump",
-                "trigger": "die"
-              },
-              "Jump"
-            ],
-            [
-              {
-                "state": "Idle",
-                "trigger": "die"
-              },
-              "Die"
-            ],
-            [
-              {
                 "state": "Jump",
                 "trigger": "die"
               },
@@ -7215,10 +7215,10 @@
             ],
             [
               {
-                "state": "BigRun",
+                "state": "BigJump",
                 "trigger": "die"
               },
-              "Run"
+              "Jump"
             ],
             [
               {
@@ -8202,19 +8202,19 @@
             },
             "texCoords": [
               {
-                "x": 0.2857143,
+                "x": 0.14285715,
                 "y": 1.0
               },
               {
-                "x": 0.2857143,
-                "y": 0.8
-              },
-              {
                 "x": 0.14285715,
                 "y": 0.8
               },
               {
-                "x": 0.14285715,
+                "x": 0.0,
+                "y": 0.8
+              },
+              {
+                "x": 0.0,
                 "y": 1.0
               }
             ]
@@ -8404,8 +8404,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.00390625,
-            "y": 0.00390625
+            "x": 0.001953125,
+            "y": 0.001953125
           },
           "origin": {
             "x": 0.0,
@@ -8517,8 +8517,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.0078125,
-            "y": 0.0078125
+            "x": 0.00390625,
+            "y": 0.00390625
           },
           "origin": {
             "x": 0.0,
@@ -8630,8 +8630,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.00390625,
-            "y": 0.00390625
+            "x": 0.001953125,
+            "y": 0.001953125
           },
           "origin": {
             "x": 0.0,
@@ -8743,8 +8743,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.00390625,
-            "y": 0.00390625
+            "x": 0.001953125,
+            "y": 0.001953125
           },
           "origin": {
             "x": 0.0,
@@ -8856,8 +8856,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.00390625,
-            "y": 0.00390625
+            "x": 0.001953125,
+            "y": 0.001953125
           },
           "origin": {
             "x": 0.0,
@@ -8969,8 +8969,8 @@
         "type": "physics2d.components.Box2DCollider",
         "properties": {
           "halfSize": {
-            "x": 0.00390625,
-            "y": 0.00390625
+            "x": 0.001953125,
+            "y": 0.001953125
           },
           "origin": {
             "x": 0.0,

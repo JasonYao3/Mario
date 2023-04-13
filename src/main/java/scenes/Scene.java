@@ -76,6 +76,15 @@ public class Scene {
         }
     }
 
+    public <T extends Component> GameObject getGameObjectWith(Class<T> clazz) {
+        for (GameObject go : gameObjects) {
+            if (go.getComponent(clazz) != null) {
+                return go;
+            }
+        }
+        return null;
+    }
+
     public List<GameObject> getGameObjects() {
         return this.gameObjects;
     }
