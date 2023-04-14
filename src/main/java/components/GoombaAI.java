@@ -42,6 +42,8 @@ public class GoombaAI extends Component {
             if (timeToKill <= 0) {
                 this.gameObject.destroy();
             }
+            this.rb.setVelocity(new Vector2f());
+            return;
         }
 
         if (goingRight) {
@@ -113,7 +115,7 @@ public class GoombaAI extends Component {
         this.rb.setAngularVelocity(0.0f);
         this.rb.setGravityScale(0.0f);
         this.stateMachine.trigger("squashMe");
-        this.rb.setIsSenor();
+        this.rb.setIsSensor();
         if (playSound) {
             AssetPool.getSound("assets/sounds/bump.ogg").play();
         }
