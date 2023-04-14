@@ -14,14 +14,14 @@ import java.util.List;
 
 public class PropertiesWindow {
     private List<GameObject> activeGameObjects;
-    private List<Vector4f> activeGameObjectOgColor;
+    private List<Vector4f> activeGameObjectsOgColor;
     private GameObject activeGameObject = null;
     private PickingTexture pickingTexture;
 
     public PropertiesWindow(PickingTexture pickingTexture) {
         this.activeGameObjects = new ArrayList<>();
         this.pickingTexture = pickingTexture;
-        this.activeGameObjectOgColor = new ArrayList<>();
+        this.activeGameObjectsOgColor = new ArrayList<>();
     }
 
     public void imgui() {
@@ -29,7 +29,7 @@ public class PropertiesWindow {
             activeGameObject = activeGameObjects.get(0);
             ImGui.begin("Properties");
 
-            if (ImGui.beginPopupContextItem("ComponentAdder")) {
+            if (ImGui.beginPopupContextWindow("ComponentAdder")) {
                 if (ImGui.menuItem("Add Rigidbody")) {
                     if (activeGameObject.getComponent(Rigidbody2D.class) == null) {
                         activeGameObject.addComponent(new Rigidbody2D());
@@ -38,14 +38,14 @@ public class PropertiesWindow {
 
                 if (ImGui.menuItem("Add Box Collider")) {
                     if (activeGameObject.getComponent(Box2DCollider.class) == null &&
-                        activeGameObject.getComponent(CircleCollider.class) == null) {
+                            activeGameObject.getComponent(CircleCollider.class) == null) {
                         activeGameObject.addComponent(new Box2DCollider());
                     }
                 }
 
                 if (ImGui.menuItem("Add Circle Collider")) {
                     if (activeGameObject.getComponent(CircleCollider.class) == null &&
-                        activeGameObject.getComponent(Box2DCollider.class) == null) {
+                            activeGameObject.getComponent(Box2DCollider.class) == null) {
                         activeGameObject.addComponent(new CircleCollider());
                     }
                 }
@@ -53,13 +53,34 @@ public class PropertiesWindow {
                 ImGui.endPopup();
 
             }
+
             activeGameObject.imgui();
             ImGui.end();
         }
     }
 
     public GameObject getActiveGameObject() {
-        return activeGameObjects.size() == 1 ? this.activeGameObjects.get(0) : null;
+        return activeGameObjects.size() == 1 ? this.activeGameObjects.get(0) :
+                null;
+    }
+
+    public List<GameObject> getActiveGameObjects() {
+        return this.activeGameObjects;
+    }
+
+    public void clearSelected() {
+        if (activeGameObjectsOgColor.size() > 0) {
+            int i = 0;
+            for (GameObject go : activeGameObjects) {
+                SpriteRenderer spr = go.getComponent(SpriteRenderer.class);
+                if (spr != null) {
+                    spr.setColor(activeGameObjectsOgColor.get(i));
+                }
+                i++;
+            }
+        }
+        this.activeGameObjects.clear();
+        this.activeGameObjectsOgColor.clear();
     }
 
     public void setActiveGameObject(GameObject go) {
@@ -69,32 +90,13 @@ public class PropertiesWindow {
         }
     }
 
-    public List<GameObject> getActiveGameObjects() {
-        return this.activeGameObjects;
-    }
-
-    public void clearSelected() {
-        if (activeGameObjectOgColor.size() > 0) {
-            int i = 0;
-            for (GameObject go : activeGameObjects) {
-                SpriteRenderer spr = go.getComponent(SpriteRenderer.class);
-                if (spr != null) {
-                    spr.setColor(activeGameObjectOgColor.get(i));
-                }
-                i++;
-            }
-        }
-        this.activeGameObjects.clear();
-        this.activeGameObjectOgColor.clear();
-    }
-
     public void addActiveGameObject(GameObject go) {
         SpriteRenderer spr = go.getComponent(SpriteRenderer.class);
-        if (spr != null) {
-            this.activeGameObjectOgColor.add(new Vector4f(spr.getColor()));
+        if (spr != null ) {
+            this.activeGameObjectsOgColor.add(new Vector4f(spr.getColor()));
             spr.setColor(new Vector4f(0.8f, 0.8f, 0.0f, 0.8f));
         } else {
-            this.activeGameObjectOgColor.add(new Vector4f());
+            this.activeGameObjectsOgColor.add(new Vector4f());
         }
         this.activeGameObjects.add(go);
     }
