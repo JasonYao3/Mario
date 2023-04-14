@@ -13,7 +13,7 @@ public class Flower extends Component {
     public void start() {
         this.rb = gameObject.getComponent(Rigidbody2D.class);
         AssetPool.getSound("assets/sounds/powerup_appears.ogg").play();
-        this.rb.setIsSenor();
+        this.rb.setIsSensor();
     }
 
     @Override
