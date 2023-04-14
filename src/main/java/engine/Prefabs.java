@@ -202,6 +202,7 @@ public class Prefabs {
         mario.addComponent(rb);
         mario.addComponent(new PlayerController());
 
+        mario.transform.zIndex = 10;
         return mario;
     }
 
