@@ -13,7 +13,7 @@ import static org.lwjgl.opengl.GL20.*;
 
 public class Shader {
 
-    public int shaderProgramID;
+    private int shaderProgramID;
     private boolean beingUsed = false;
 
     private String vertexSource;
@@ -53,7 +53,7 @@ public class Shader {
             }
         } catch(IOException e) {
             e.printStackTrace();
-            assert  false : "Error: Could not open file for shader: " + filepath;
+            assert false : "Error: Could not open file for shader: '" + filepath + "'";
         }
     }
 
