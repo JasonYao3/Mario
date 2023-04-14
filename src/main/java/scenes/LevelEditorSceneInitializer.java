@@ -49,13 +49,6 @@ public class LevelEditorSceneInitializer extends SceneInitializer {
         AssetPool.addSpritesheet("assets/images/spritesheet.png",
                 new Spritesheet(AssetPool.getTexture("assets/images/spritesheet.png"),
                         16, 16, 26, 0));
-        AssetPool.addSpritesheet("assets/images/items.png",
-                new Spritesheet(AssetPool.getTexture("assets/images/items.png"),
-                        16, 16, 43, 0));
-        AssetPool.addSpritesheet("assets/images/gizmos.png",
-                new Spritesheet(AssetPool.getTexture("assets/images/gizmos.png"),
-                        24, 48, 3, 0));
-
         AssetPool.addSpritesheet("assets/images/turtle.png",
                 new Spritesheet(AssetPool.getTexture("assets/images/turtle.png"),
                         16, 24, 4, 0));
@@ -65,7 +58,12 @@ public class LevelEditorSceneInitializer extends SceneInitializer {
         AssetPool.addSpritesheet("assets/images/pipes.png",
                 new Spritesheet(AssetPool.getTexture("assets/images/pipes.png"),
                         32, 32, 4, 0));
-
+        AssetPool.addSpritesheet("assets/images/items.png",
+                new Spritesheet(AssetPool.getTexture("assets/images/items.png"),
+                        16, 16, 43, 0));
+        AssetPool.addSpritesheet("assets/images/gizmos.png",
+                new Spritesheet(AssetPool.getTexture("assets/images/gizmos.png"),
+                        24, 48, 3, 0));
         AssetPool.getTexture("assets/images/blendImage2.png");
 
         AssetPool.addSound("assets/sounds/main-theme-overworld.ogg", true);
@@ -83,6 +81,8 @@ public class LevelEditorSceneInitializer extends SceneInitializer {
         AssetPool.addSound("assets/sounds/stomp.ogg", false);
         AssetPool.addSound("assets/sounds/kick.ogg", false);
         AssetPool.addSound("assets/sounds/invincible.ogg", false);
+
+        AssetPool.getSound(("assets/sounds/main-theme-overworld.ogg")).stop();
 
         for (GameObject g : scene.getGameObjects()) {
             if (g.getComponent(SpriteRenderer.class) != null) {
@@ -224,7 +224,7 @@ public class LevelEditorSceneInitializer extends SceneInitializer {
                 ImGui.popID();
                 ImGui.sameLine();
 
-                sprite = playerSprites.getSprite(7);
+                sprite = items.getSprite(7);
                 id = sprite.getTexId();
                 texCoords = sprite.getTexCoords();
                 ImGui.pushID(uid++);
@@ -313,6 +313,7 @@ public class LevelEditorSceneInitializer extends SceneInitializer {
                 }
                 ImGui.popID();
                 ImGui.sameLine();
+
                 sprite = pipes.getSprite(3);
                 id = sprite.getTexId();
                 texCoords = sprite.getTexCoords();
@@ -325,7 +326,6 @@ public class LevelEditorSceneInitializer extends SceneInitializer {
 
                 ImGui.endTabItem();
             }
-
 
             if (ImGui.beginTabItem("Sounds")) {
                 Collection<Sound> sounds = AssetPool.getAllSounds();
@@ -343,6 +343,7 @@ public class LevelEditorSceneInitializer extends SceneInitializer {
                         ImGui.sameLine();
                     }
                 }
+
                 ImGui.endTabItem();
             }
             ImGui.endTabBar();
