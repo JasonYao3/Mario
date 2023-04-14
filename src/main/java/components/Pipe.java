@@ -11,7 +11,6 @@ import util.AssetPool;
 import static org.lwjgl.glfw.GLFW.*;
 
 public class Pipe extends Component {
-
     private Direction direction;
     private String connectingPipeName = "";
     private boolean isEntrance = false;
@@ -60,7 +59,7 @@ public class Pipe extends Component {
                     break;
                 case Down:
                     if ((KeyListener.isKeyPressed(GLFW_KEY_UP)
-                            || KeyListener.isKeyPressed(GLFW_KEY_U)) && isEntrance
+                            || KeyListener.isKeyPressed(GLFW_KEY_W)) && isEntrance
                             && playerAtEntrance()) {
                         playerEntering = true;
                     }
@@ -109,28 +108,6 @@ public class Pipe extends Component {
     public void beginCollision(GameObject collidingObject, Contact contact, Vector2f contactNormal) {
         PlayerController playerController = collidingObject.getComponent(PlayerController.class);
         if (playerController != null) {
-            switch (direction) {
-                case Up:
-                    if (contactNormal.y < entranceVectorTolerance) {
-                        return;
-                    }
-                    break;
-                case Right:
-                    if (contactNormal.x < entranceVectorTolerance) {
-                        return;
-                    }
-                    break;
-                case Down:
-                    if (contactNormal.y > - entranceVectorTolerance) {
-                        return;
-                    }
-                    break;
-                case Left:
-                    if (contactNormal.x > - entranceVectorTolerance) {
-                        return;
-                    }
-                    break;
-            }
             collidingPlayer = playerController;
         }
     }
@@ -143,8 +120,7 @@ public class Pipe extends Component {
         }
     }
 
-
-        private Vector2f getPlayerPosition(GameObject pipe) {
+    private Vector2f getPlayerPosition(GameObject pipe) {
         Pipe pipeComponent = pipe.getComponent(Pipe.class);
         switch (pipeComponent.direction) {
             case Up:
