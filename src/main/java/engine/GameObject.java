@@ -46,7 +46,7 @@ public class GameObject {
     public <T extends Component> void removeComponent(Class<T> componentClass) {
         for (int i=0; i < components.size(); i++) {
             Component c = components.get(i);
-            if (componentClass.isAssignableFrom(components.getClass())) {
+            if (componentClass.isAssignableFrom(c.getClass())) {
                 components.remove(i);
                 return;
             }
@@ -83,6 +83,7 @@ public class GameObject {
                 c.imgui();
         }
     }
+
     public void destroy() {
         this.isDead = true;
         for (int i=0; i < components.size(); i++) {
@@ -99,6 +100,7 @@ public class GameObject {
                 .create();
         String objAsJson = gson.toJson(this);
         GameObject obj = gson.fromJson(objAsJson, GameObject.class);
+
         obj.generateUid();
         for (Component c : obj.getAllComponents()) {
             c.generateId();
@@ -108,6 +110,7 @@ public class GameObject {
         if (sprite != null && sprite.getTexture() != null) {
             sprite.setTexture(AssetPool.getTexture(sprite.getTexture().getFilepath()));
         }
+
         return obj;
     }
 
@@ -138,6 +141,4 @@ public class GameObject {
     public boolean doSerialization() {
         return this.doSerialization;
     }
-
-
 }
