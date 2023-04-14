@@ -10,7 +10,7 @@ public class AnimationState {
     public List<Frame> animationFrames = new ArrayList<>();
 
     private static Sprite defaultSprite = new Sprite();
-    private transient float timeTracker = 0.0f;
+    private float timeTracker = 0.0f;
     private transient int currentSprite = 0;
     public boolean doesLoop = false;
 
@@ -20,9 +20,14 @@ public class AnimationState {
         }
     }
 
-
     public void addFrame(Sprite sprite, float frameTime) {
         animationFrames.add(new Frame(sprite, frameTime));
+    }
+
+    public void addFrame(List<Sprite> sprites, float frameTime) {
+        for (Sprite sprite : sprites) {
+            this.animationFrames.add(new Frame(sprite, frameTime));
+        }
     }
 
     public void setLoop(boolean doesLoop) {
