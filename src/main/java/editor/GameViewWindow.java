@@ -12,7 +12,6 @@ import org.joml.Vector2f;
 
 public class GameViewWindow {
 
-    private float leftX, rightX, topY, bottomY;
     private boolean isPlaying = false;
     private boolean windowIsHovered;
 
@@ -41,10 +40,14 @@ public class GameViewWindow {
         ImGui.imageButton(textureId, windowSize.x, windowSize.y, 0, 1, 1, 0);
         windowIsHovered = ImGui.isItemHovered();
 
-        MouseListener.setGameViewportPos(new Vector2f(windowPos.x - 10, windowPos.y));
+        MouseListener.setGameViewportPos(new Vector2f(windowPos.x + 10, windowPos.y));
         MouseListener.setGameViewportSize(new Vector2f(windowSize.x, windowSize.y));
 
         ImGui.end();
+    }
+
+    public boolean getWantCaptureMouse() {
+        return windowIsHovered;
     }
 
     private ImVec2 getLargestSizeForViewport() {
@@ -71,9 +74,5 @@ public class GameViewWindow {
 
         return new ImVec2(viewportX + ImGui.getCursorPosX(),
                 viewportY + ImGui.getCursorPosY());
-    }
-
-    public boolean getWantCaptureMouse() {
-        return windowIsHovered;
     }
 }
