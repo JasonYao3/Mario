@@ -9,7 +9,7 @@ import physics2d.Physics2D;
 import physics2d.components.Rigidbody2D;
 import util.AssetPool;
 
-public class TurtleAI extends  Component {
+public class TurtleAI extends Component {
     private transient boolean goingRight = false;
     private transient Rigidbody2D rb;
     private transient float walkSpeed = 0.6f;
@@ -64,8 +64,8 @@ public class TurtleAI extends  Component {
         this.rb.setVelocity(velocity);
 
         if (this.gameObject.transform.position.x <
-                Window.getScene().camera.position.x - 0.5f) {
-            //|| this.gameObject.transform.position.y < 0.0f) {
+                Window.getScene().camera().position.x - 0.5f) {// ||
+                //this.gameObject.transform.position.y < 0.0f) {
             this.gameObject.destroy();
         }
     }
