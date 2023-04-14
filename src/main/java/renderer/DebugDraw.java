@@ -8,7 +8,6 @@ import util.AssetPool;
 import util.JMath;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static org.lwjgl.opengl.GL15.*;
@@ -88,7 +87,7 @@ public class DebugDraw {
         }
 
         glBindBuffer(GL_ARRAY_BUFFER, vboID);
-        glBufferSubData(GL_ARRAY_BUFFER, 0, Arrays.copyOfRange(vertexArray,0, lines.size() * 6 * 2));
+        glBufferData(GL_ARRAY_BUFFER, vertexArray, GL_DYNAMIC_DRAW);
 
         // Use our shader
         shader.use();
@@ -131,13 +130,12 @@ public class DebugDraw {
                 add(new Vector2f(camera.getProjectionSize()).
                 mul(camera.getZoom())).
                 add(new Vector2f(4.0f, 4.0f));
-
-        boolean lineInView = ((from.x >= cameraLeft.x && from.x <= cameraRight.x) &&
-                             (from.y >= cameraLeft.y && from.y <= cameraRight.y)) ||
-                             ((to.x >= cameraLeft.x && to.x <= cameraRight.x) &&
-                             (to.y >= cameraLeft.y && to.y <= cameraRight.y));
-        if (lines.size() >= MAX_LINES || !lineInView)
+        boolean lineInView =
+                ((from.x >= cameraLeft.x && from.x <= cameraRight.x) && (from.y >= cameraLeft.y && from.y <= cameraRight.y)) ||
+                ((to.x >= cameraLeft.x && to.x <= cameraRight.x) && (to.y >= cameraLeft.y && to.y <= cameraRight.y));
+        if (lines.size() >= MAX_LINES || !lineInView) {
             return;
+        }
         DebugDraw.lines.add(new Line2D(from, to, color, lifetime));
     }
 
@@ -146,7 +144,7 @@ public class DebugDraw {
     // =========================================================
     public static void addBox2D(Vector2f center, Vector2f dimensions, float rotation) {
         // TODO: ADD CONSTANTS FOR COMMON COLORS
-        addBox2D(center, dimensions, rotation, new Vector3f(0,1,0), 1);
+        addBox2D(center, dimensions, rotation, new Vector3f(0, 1, 0), 1);
     }
 
     public static void addBox2D(Vector2f center, Vector2f dimensions, float rotation, Vector3f color) {
@@ -155,8 +153,8 @@ public class DebugDraw {
 
     public static void addBox2D(Vector2f center, Vector2f dimensions, float rotation,
                                 Vector3f color, int lifetime) {
-        Vector2f min = new Vector2f(center).sub(new Vector2f(dimensions).div(2.0f));
-        Vector2f max = new Vector2f(center).add(new Vector2f(dimensions).div(2.0f));
+        Vector2f min = new Vector2f(center).sub(new Vector2f(dimensions).mul(0.5f));
+        Vector2f max = new Vector2f(center).add(new Vector2f(dimensions).mul(0.5f));
 
         Vector2f[] vertices = {
             new Vector2f(min.x, min.y), new Vector2f(min.x, max.y),
@@ -184,7 +182,7 @@ public class DebugDraw {
         addCircle(center, radius, new Vector3f(0,1,0), 1);
     }
 
-    public static void addCircle(Vector2f center, float radius,  Vector3f color) {
+    public static void addCircle(Vector2f center, float radius, Vector3f color) {
         addCircle(center, radius, color, 1);
     }
 
