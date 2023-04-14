@@ -77,11 +77,10 @@ public class PlayerController extends Component {
                 stateMachine.trigger("stopJumping");
             } else {
                 if (this.walkTime > 0) {
-                    gameObject.transform.position.x = 0.25f;
+                    gameObject.transform.scale.x = 0.25f;
                     gameObject.transform.position.x += dt;
                     stateMachine.trigger("startRunning");
                 }
-
                 if (!AssetPool.getSound("assets/sounds/stage_clear.ogg").isPlaying()) {
                     AssetPool.getSound("assets/sounds/stage_clear.ogg").play();
                 }
@@ -89,7 +88,7 @@ public class PlayerController extends Component {
                 walkTime -= dt;
 
                 if (timeToCastle <= 0) {
-                    Window.changeScene(new LevelSceneInitializer());
+                    Window.changeScene(new LevelEditorSceneInitializer());
                 }
             }
             return;
@@ -108,7 +107,7 @@ public class PlayerController extends Component {
                 this.rb.setVelocity(this.velocity);
                 this.rb.setAngularVelocity(0);
             } else if (!deadGoingUp && gameObject.transform.position.y <= deadMinHeight) {
-                Window.changeScene(new LevelEditorSceneInitializer());
+                Window.changeScene(new LevelSceneInitializer());
             }
             return;
         }
@@ -141,7 +140,7 @@ public class PlayerController extends Component {
             } else {
                 this.stateMachine.trigger("startRunning");
             }
-        } else if (KeyListener.isKeyPressed(GLFW_KEY_LEFT) && !KeyListener.isKeyPressed(GLFW_KEY_A)) {
+        } else if (KeyListener.isKeyPressed(GLFW_KEY_LEFT) || KeyListener.isKeyPressed(GLFW_KEY_A)) {
             this.gameObject.transform.scale.x = -playerWidth;
             this.acceleration.x = -walkSpeed;
 
@@ -169,7 +168,7 @@ public class PlayerController extends Component {
             Vector2f position = new Vector2f(this.gameObject.transform.position)
                     .add(this.gameObject.transform.scale.x > 0
                     ? new Vector2f(0.26f, 0)
-                            : new Vector2f(-0.26f, 0));
+                    : new Vector2f(-0.26f, 0));
             GameObject fireball = Prefabs.generateFireball(position);
             fireball.getComponent(Fireball.class).goingRight =
                     this.gameObject.transform.scale.x > 0;
@@ -192,7 +191,7 @@ public class PlayerController extends Component {
         } else if (enemyBounce > 0) {
             enemyBounce--;
             this.velocity.y = ((enemyBounce / 2.2f) * jumpBoost);
-        } else if (!onGround) {
+        }else if (!onGround) {
             if (this.jumpTime > 0) {
                 this.velocity.y *= 0.35f;
                 this.jumpTime = 0;
@@ -230,7 +229,6 @@ public class PlayerController extends Component {
         this.rb.setPosition(newPos);
     }
 
-
     public void powerup() {
         if (playerState == PlayerState.Small) {
             playerState = PlayerState.Big;
@@ -256,12 +254,14 @@ public class PlayerController extends Component {
             velocity.set(0.0f, 0.0f);
             acceleration.set(0.0f, 0.0f);
             rb.setVelocity(velocity);
-            rb.setIsSenor();
+            rb.setIsSensor();
             rb.setBodyType(BodyType.Static);
             gameObject.transform.position.x = flagpole.transform.position.x;
+            AssetPool.getSound("assets/sounds/main-theme-overworld.ogg").stop();
             AssetPool.getSound("assets/sounds/flagpole.ogg").play();
         }
     }
+
     @Override
     public void beginCollision(GameObject collidingObject, Contact contact, Vector2f contactNormal) {
         if (isDead) return;
@@ -276,10 +276,10 @@ public class PlayerController extends Component {
             }
         }
     }
+
     public void enemyBounce() {
         this.enemyBounce = 8;
     }
-
 
     public boolean isDead() {
         return this.isDead;
@@ -300,12 +300,13 @@ public class PlayerController extends Component {
             this.acceleration.set(0, 0);
             this.rb.setVelocity(new Vector2f());
             this.isDead = true;
-            this.rb.setIsSenor();
+            this.rb.setIsSensor();
+            AssetPool.getSound("assets/sounds/main-theme-overworld.ogg").stop();
             AssetPool.getSound("assets/sounds/mario_die.ogg").play();
             deadMaxHeight = this.gameObject.transform.position.y + 0.3f;
             this.rb.setBodyType(BodyType.Static);
             if (gameObject.transform.position.y > 0) {
-                deadMaxHeight = -0.25f;
+                deadMinHeight = -0.25f;
             }
         } else if (this.playerState == PlayerState.Big) {
             this.playerState = PlayerState.Small;
@@ -332,5 +333,4 @@ public class PlayerController extends Component {
     public boolean isSmall() {
         return this.playerState == PlayerState.Small;
     }
-
 }
