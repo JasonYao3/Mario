@@ -8,7 +8,7 @@ public class Frame {
 
     }
 
-    public Frame(Sprite sprite, float time) {
+    public Frame(Sprite sprite, float frameTime) {
         this.sprite = sprite;
         this.frameTime = frameTime;
     }
