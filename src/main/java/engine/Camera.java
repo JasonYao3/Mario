@@ -11,8 +11,8 @@ public class Camera {
 
     private float projectionWidth = 6;
     private float projectionHeight = 3;
-    public Vector4f clearColor = new Vector4f(1,1,1,1);
-    private Vector2f projectionSize = new Vector2f(projectionWidth,projectionHeight);
+    public Vector4f clearColor = new Vector4f(1, 1, 1, 1);
+    private Vector2f projectionSize = new Vector2f(projectionWidth, projectionHeight);
 
     private float zoom = 1.0f;
 
@@ -28,18 +28,19 @@ public class Camera {
     public void adjustProjection() {
         projectionMatrix.identity();
         projectionMatrix.ortho(0.0f, projectionSize.x * this.zoom,
-                0.0f, projectionSize.y * this.zoom, 0.0f, 100.0f);
-        projectionMatrix.invert(inverseProjection);
+                0.0f, projectionSize.y * zoom, 0.0f, 100.0f);
+        inverseProjection = new Matrix4f(projectionMatrix).invert();
     }
 
     public Matrix4f getViewMatrix() {
         Vector3f cameraFront = new Vector3f(0.0f, 0.0f, -1.0f);
         Vector3f cameraUp = new Vector3f(0.0f, 1.0f, 0.0f);
-        this.viewMatrix.identity();
+        viewMatrix.identity();
         viewMatrix.lookAt(new Vector3f(position.x, position.y, 20.0f),
                                         cameraFront.add(position.x, position.y, 0.0f),
                                         cameraUp);
-        this.viewMatrix.invert(inverseView);
+        inverseView = new Matrix4f(this.viewMatrix).invert();
+
         return this.viewMatrix;
     }
 
