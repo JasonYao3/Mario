@@ -24,6 +24,7 @@ import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.openal.ALC10.*;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryUtil.NULL;
+
 public class Window implements Observer {
     private int width, height;
     private String title;
@@ -58,7 +59,6 @@ public class Window implements Observer {
        currentScene.init();
        currentScene.start();
     }
-
 
     public static Window get() {
         if (Window.window == null) {
@@ -148,6 +148,11 @@ public class Window implements Observer {
             assert false : "Audio library not supported.";
         }
 
+        // This line is critical for LWJGL's interoperation with GLFW's
+        // OpenGL context, or any context that is managed externally.
+        // LWJGL detects the context that is current in the current thread,
+        // creates the GLCapabilities instance and makes the OpenGL
+        // bindings available for use.
         GL.createCapabilities();
 
         glEnable(GL_BLEND);
@@ -184,7 +189,7 @@ public class Window implements Observer {
             glClearColor(0,0,0,0);
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-            Renderer.bindShader(defaultShader);
+            Renderer.bindShader(pickingShader);
             currentScene.render();
 
             pickingTexture.disableWriting();
@@ -264,6 +269,7 @@ public class Window implements Observer {
                 break;
             case LoadLevel:
                 Window.changeScene(new LevelEditorSceneInitializer());
+                break;
             case SaveLevel:
                 currentScene.save();
                 break;
