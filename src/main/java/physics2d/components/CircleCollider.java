@@ -55,7 +55,7 @@ public class CircleCollider extends Component {
         if (gameObject != null) {
             Rigidbody2D rb = gameObject.getComponent(Rigidbody2D.class);
             if (rb != null) {
-                Window.getPhysics().resetCirleCollider(rb, this);
+                Window.getPhysics().resetCircleCollider(rb, this);
             }
         }
     }
