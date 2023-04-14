@@ -130,14 +130,16 @@ public class TurtleAI extends  Component {
             }
         }
 
-        if (!isDead) {
-            walkSpeed *= 3.0f;
-            stomp();
-        } else {
-            isMoving = !isMoving;
-            goingRight = contactNormal.x < 0;
+        if (obj.getComponent(Fireball.class) != null) {
+            if (!isDead) {
+                walkSpeed *= 3.0f;
+                stomp();
+            } else {
+                isMoving = !isMoving;
+                goingRight = contactNormal.x < 0;
+            }
+            obj.getComponent(Fireball.class).disappear();
+            contact.setEnabled(false);
         }
-        obj.getComponent(Fireball.class).disappear();
-        contact.setEnabled(false);
     }
 }
