@@ -150,7 +150,7 @@ public class RenderBatch implements Comparable<RenderBatch>{
         for (int i=0; i < textures.size(); i++) {
             glActiveTexture(GL_TEXTURE0 + i + 1);
             textures.get(i).bind();
-        };
+        }
         shader.uploadIntArray("uTextures", texSlots);
 
         glBindVertexArray(vaoID);
@@ -165,7 +165,7 @@ public class RenderBatch implements Comparable<RenderBatch>{
 
         for (int i=0; i < textures.size(); i++) {
             textures.get(i).unbind();
-        };
+        }
         shader.detach();
     }
 
@@ -208,11 +208,11 @@ public class RenderBatch implements Comparable<RenderBatch>{
         Matrix4f transformMatrix = new Matrix4f().identity();
         if (isRotated) {
             transformMatrix.translate(sprite.gameObject.transform.position.x,
-                                    sprite.gameObject.transform.position.y, 0);
+                                        sprite.gameObject.transform.position.y, 0f);
             transformMatrix.rotate((float)Math.toRadians(sprite.gameObject.transform.rotation),
-                    0,0,1);
-            transformMatrix.scale(sprite.gameObject.transform.scale.x, sprite.gameObject.transform.scale.y, 1);
-
+                    0, 0, 1);
+            transformMatrix.scale(sprite.gameObject.transform.scale.x,
+                    sprite.gameObject.transform.scale.y, 1);
         }
 
         // Add vertices with the appropriate properties
@@ -228,7 +228,8 @@ public class RenderBatch implements Comparable<RenderBatch>{
             }
 
             Vector4f currentPos = new Vector4f(sprite.gameObject.transform.position.x + (xAdd * sprite.gameObject.transform.scale.x),
-                    sprite.gameObject.transform.position.y + (yAdd * sprite.gameObject.transform.scale.y), 0, 1);
+                    sprite.gameObject.transform.position.y + (yAdd * sprite.gameObject.transform.scale.y),
+                    0, 1);
             if (isRotated) {
                 currentPos = new Vector4f(xAdd, yAdd, 0, 1).mul(transformMatrix);
             }
@@ -302,6 +303,4 @@ public class RenderBatch implements Comparable<RenderBatch>{
     public int compareTo(RenderBatch o) {
         return Integer.compare(this.zIndex, o.zIndex());
     }
-
-
 }
