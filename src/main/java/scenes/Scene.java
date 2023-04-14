@@ -23,7 +23,7 @@ import java.util.Optional;
 public class Scene {
 
     private Renderer renderer;
-    public Camera camera;
+    private Camera camera;
     private boolean isRunning;
     private List<GameObject> gameObjects;
     private List<GameObject> pendingObjects;
@@ -40,17 +40,14 @@ public class Scene {
         this.isRunning = false;
     }
 
+    public Physics2D getPhysics() {
+        return this.physics2D;
+    }
+
     public void init() {
         this.camera = new Camera(new Vector2f(0, 0));
         this.sceneInitializer.loadResources(this);
         this.sceneInitializer.init(this);
-    }
-
-    public GameObject createGameObject(String name) {
-        GameObject go = new GameObject(name);
-        go.addComponent(new Transform());
-        go.transform = go.getComponent(Transform.class);
-        return go;
     }
 
     public void start() {
@@ -62,6 +59,7 @@ public class Scene {
         }
         isRunning = true;
     }
+
     public void addGameObjectToScene(GameObject go) {
         if (!isRunning) {
             gameObjects.add(go);
@@ -82,6 +80,7 @@ public class Scene {
                 return go;
             }
         }
+
         return null;
     }
 
@@ -96,17 +95,10 @@ public class Scene {
         return result.orElse(null);
     }
 
-    public GameObject getGameObject(String gameObjectName) {
-        Optional<GameObject> result = this.gameObjects.stream()
-                .filter(gameObject -> gameObject.name.equals(gameObjectName))
-                .findFirst();
-        return result.orElse(null);
-    }
-
     public void editorUpdate(float dt) {
         this.camera.adjustProjection();
 
-        for (int i = 0; i < gameObjects.size(); i++) {
+        for (int i=0; i < gameObjects.size(); i++) {
             GameObject go = gameObjects.get(i);
             go.editorUpdate(dt);
 
@@ -127,11 +119,18 @@ public class Scene {
         pendingObjects.clear();
     }
 
+    public GameObject getGameObject(String gameObjectName) {
+        Optional<GameObject> result = this.gameObjects.stream()
+                .filter(gameObject -> gameObject.name.equals(gameObjectName))
+                .findFirst();
+        return result.orElse(null);
+    }
+
     public void update(float dt) {
         this.camera.adjustProjection();
         this.physics2D.update(dt);
 
-        for (int i = 0; i < gameObjects.size(); i++) {
+        for (int i=0; i < gameObjects.size(); i++) {
             GameObject go = gameObjects.get(i);
             go.update(dt);
 
@@ -163,6 +162,13 @@ public class Scene {
         this.sceneInitializer.imgui();
     }
 
+    public GameObject createGameObject(String name) {
+        GameObject go = new GameObject(name);
+        go.addComponent(new Transform());
+        go.transform = go.getComponent(Transform.class);
+        return go;
+    }
+
     public void save() {
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
@@ -185,6 +191,7 @@ public class Scene {
             e.printStackTrace();
         }
     }
+
     public void load() {
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
@@ -192,6 +199,7 @@ public class Scene {
                 .registerTypeAdapter(GameObject.class, new GameObjectDeserializer())
                 .enableComplexMapKeySerialization()
                 .create();
+
         String inFile = "";
 
         try {
@@ -222,9 +230,5 @@ public class Scene {
             GameObject.init(maxGoId);
             Component.init(maxCompId);
         }
-    }
-
-    public Physics2D getPhysics() {
-        return this.physics2D;
     }
 }
