@@ -94,12 +94,14 @@ public class Pipe extends Component {
             case Up:
                 return playerMin.y >= max.y && playerMax.x > min.x && playerMin.x < max.x;
             case Down:
-                return playerMax.y <= max.y && playerMax.x > min.x && playerMin.x < max.x;
+                return playerMax.y <= min.y && playerMax.x > min.x && playerMin.x < max.x;
             case Right:
-                return playerMax.x <= min.x && playerMax.y > min.y && playerMin.y < max.y;
-            case Left:
                 return playerMin.x >= max.x && playerMax.y > min.y && playerMin.y < max.y;
+            case Left:
+                return playerMin.x <= min.x && playerMax.y > min.y && playerMin.y < max.y;
         }
+
+        System.out.println("HAHAHA");
         return false;
     }
 
