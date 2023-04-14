@@ -13,12 +13,12 @@ public class Texture {
     private transient int texID;
     private int width, height;
 
-
     public Texture() {
         texID = -1;
         width = -1;
         height = -1;
     }
+
     public Texture(int width, int height) {
         this.filepath = "Generated";
 
@@ -29,9 +29,8 @@ public class Texture {
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB,
-                GL_UNSIGNED_BYTE, 0);
-
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height,
+                0, GL_RGB, GL_UNSIGNED_BYTE, 0);
     }
 
     public void init(String filepath) {
@@ -61,11 +60,13 @@ public class Texture {
             this.height = height.get(0);
 
             if (channels.get(0) == 3) {
-                glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width.get(0), height.get(0), 0, GL_RGB, GL_UNSIGNED_BYTE, image);
+                glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width.get(0), height.get(0),
+                        0, GL_RGB, GL_UNSIGNED_BYTE, image);
             } else if (channels.get(0) == 4) {
-                glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width.get(0), height.get(0), 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
+                glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width.get(0), height.get(0),
+                        0, GL_RGBA, GL_UNSIGNED_BYTE, image);
             } else {
-                assert false: "Error: (Texture) Unknown number of channels " + channels.get(0);
+                assert false : "Error: (Texture) Unknown number of channesl '" + channels.get(0) + "'";
             }
         } else {
             assert false: "Error: (Texture) Could not load image " + filepath;
@@ -103,7 +104,8 @@ public class Texture {
         if (o == null) return false;
         if (!(o instanceof Texture)) return false;
         Texture oTex = (Texture)o;
-        return oTex.getWidth() == this.width && oTex.getHeight() == this.height && oTex.getId() == this.texID &&
+        return oTex.getWidth() == this.width && oTex.getHeight() == this.height &&
+                oTex.getId() == this.texID &&
                 oTex.getFilepath().equals(this.filepath);
     }
 }
